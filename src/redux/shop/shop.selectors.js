@@ -15,6 +15,11 @@ export const selectShopCollections = createSelector(
   (shop) => shop.collections
 );
 
+export const selectCollectionForPreview = createSelector(
+  [selectShopCollections],
+  (collections) => Object.keys(collections).map((key) => collections[key])
+);
+
 // when data was array
 // export const selectCollection = (collectionUrlParam) =>
 //   createSelector([selectShopCollections], (collections) =>
