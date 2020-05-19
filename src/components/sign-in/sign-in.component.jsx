@@ -14,7 +14,7 @@ class SingIn extends Component {
     };
   }
 
-  handleSumbit = async (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = this.state;
 
@@ -37,7 +37,7 @@ class SingIn extends Component {
         <h2>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
-        <form onSubmit={this.handleSumbit}>
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             id="email"
             type="email"
