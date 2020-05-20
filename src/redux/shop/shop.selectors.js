@@ -12,12 +12,13 @@ const selectShop = (state) => state.shop;
 
 export const selectShopCollections = createSelector(
   [selectShop],
-  (shop) => shop.collections
+  ({ collections }) => collections
 );
 
 export const selectCollectionForPreview = createSelector(
   [selectShopCollections],
-  (collections) => Object.keys(collections).map((key) => collections[key])
+  (collections) =>
+    collections ? Object.keys(collections).map((key) => collections[key]) : []
 );
 
 // when data was array
@@ -30,7 +31,6 @@ export const selectCollectionForPreview = createSelector(
 
 // after data normalisation (converted to object)
 export const selectCollection = (collectionUrlParam) =>
-  createSelector(
-    [selectShopCollections],
-    (collections) => collections[collectionUrlParam]
+  createSelector([selectShopCollections], (collections) =>
+    collections ? collections[collectionUrlParam] : null
   );

@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="777eac56-fbae-483d-aafc-f6699e210e94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -91,7 +92,8 @@
       <workItem from="1589947907331" duration="3935000" />
       <workItem from="1589958861828" duration="961000" />
       <workItem from="1589964362495" duration="288000" />
-      <workItem from="1589964663311" duration="257000" />
+      <workItem from="1589964663311" duration="414000" />
+      <workItem from="1589965867623" duration="1821000" />
     </task>
     <task id="LOCAL-00001" summary="adding util function to upload collection to database">
       <created>1589954913554</created>
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589959791191</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="connecting db to redux">
+      <created>1589965056868</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589965056868</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,18 +137,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding util function to upload collection to database" />
     <MESSAGE value="linking app to firebase db" />
-    <option name="LAST_COMMIT_MESSAGE" value="linking app to firebase db" />
+    <MESSAGE value="connecting db to redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="connecting db to redux" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="921" y="129" key="CommitChangelistDialog2" timestamp="1589965056681">
+      <screen x="0" y="23" width="1792" height="1061" />
+    </state>
+    <state x="921" y="129" key="CommitChangelistDialog2/0.23.1792.1061@0.23.1792.1061" timestamp="1589965056681" />
     <state x="550" y="154" key="FileChooserDialogImpl" timestamp="1589913799072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589913799072" />
-    <state x="326" y="98" key="SettingsEditor" timestamp="1589964476790">
+    <state x="326" y="98" key="SettingsEditor" timestamp="1589966736750">
       <screen x="0" y="23" width="1792" height="1061" />
     </state>
     <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589953991441" />
-    <state x="326" y="98" key="SettingsEditor/0.23.1792.1061@0.23.1792.1061" timestamp="1589964476790" />
+    <state x="326" y="98" key="SettingsEditor/0.23.1792.1061@0.23.1792.1061" timestamp="1589966736750" />
     <state x="724" y="149" key="Vcs.Push.Dialog.v2" timestamp="1589959793852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -148,10 +162,10 @@
       <screen x="0" y="23" width="1792" height="1061" />
     </state>
     <state x="1045" y="186" width="598" height="735" key="find.popup/0.23.1792.1061@0.23.1792.1061" timestamp="1589962981058" />
-    <state x="951" y="210" width="784" height="874" key="search.everywhere.popup" timestamp="1589964583484">
+    <state x="951" y="210" width="784" height="874" key="search.everywhere.popup" timestamp="1589967329667">
       <screen x="0" y="23" width="1792" height="1061" />
     </state>
     <state x="815" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589958881092" />
-    <state x="951" y="210" width="784" height="874" key="search.everywhere.popup/0.23.1792.1061@0.23.1792.1061" timestamp="1589964583484" />
+    <state x="951" y="210" width="784" height="874" key="search.everywhere.popup/0.23.1792.1061@0.23.1792.1061" timestamp="1589967329667" />
   </component>
 </project>
